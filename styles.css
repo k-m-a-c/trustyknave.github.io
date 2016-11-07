@@ -35,7 +35,7 @@ body {
 }
 
 .home__hero_body {
-  color: white;
+  color: black;
   font-family: sans-serif;
   font-size: 17px;
   margin: 10px 0;
@@ -43,7 +43,7 @@ body {
 }
 
 .home__hero_body--bold {
-  color: white;
+  color: black;
   font-family: sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -61,9 +61,10 @@ body {
 }
 
 .home__footer_text {
-  color: white;
+  color: black;
   font-family: sans-serif;
   font-size: 17px;
+  margin: 10px 0;
 }
 
 .home__footer_link {
@@ -73,5 +74,5 @@ body {
 }
 
 .home__footer_link:hover {
-  text-decoration: underline;
+  color: black;
 }
