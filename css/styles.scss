@@ -56,7 +56,7 @@ body {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    max-width: 75%;
+    max-width: 80%;
   }
 
   @include desktop {
@@ -129,40 +129,8 @@ body {
     color: white;
     text-decoration: none;
 
-    &--500px {
-      color: white;
-      text-decoration: none;
-
-      &:hover {
-        color: black;
-      }
-    }
-
-    &--email {
-      color: white;
-      text-decoration: none;
-
-      &:hover {
-        color: #dd4b39;
-      }
-    }
-
-    &--github {
-      color: white;
-      text-decoration: none;
-
-      &:hover {
-        color: black;
-      }
-    }
-
-    &--twitter {
-      color: white;
-      text-decoration: none;
-
-      &:hover {
-        color: #55acee;
-      }
+    &:hover {
+      color: #5ba3a3;
     }
   }
 }
