@@ -1,0 +1,17 @@
+hero:
+  title: "Hi, I'm Kevin."
+  image: "Illustration of Kevin McLoughlin."
+  body:
+    tenure: "I've been producing software for the iPhone, Android, and Web since 2010."
+    roles: "During that time I've held roles in Sales & Marketing, Product Management, and, most recently, in Engineering as a Web Developer at 500px."
+    interests: "When I'm not working you'll find me hacking on personal projects, reading philosophy, or whacking around a tennis ball."
+footer:
+  location: "Toronto, Canada."
+  contact:
+    title: "Contact:"
+    email: "kevin@trustyknave.com"
+    twitter: "https://twitter.com/trustyknave"
+    github: "https://github.com/trustyknave"
+  work:
+    title: "Work:"
+    500px: "https://500px.com/kmcloughlin"

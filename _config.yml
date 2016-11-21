@@ -1,7 +1,5 @@
----
----
-
-name: Trustyknave
+name: trustyknave
 markdown: kramdown
+title: Kevin McLoughlin
 sass:
   sass_dir: _sass

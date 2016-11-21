@@ -1,4 +1,5 @@
 ---
+title: <Home>
 ---
 
 <!DOCTYPE html>
@@ -19,44 +20,48 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Kevin McLoughlin</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
 </head>
 <body>
+  <!-- Helper variable to shorten reference to data file -->
+  {% assign page_path = site.data.home %}
   <section class="home__hero">
-    <img class="home__hero_img" src="kevin.svg" alt="illustration of Kevin McLoughlin">
-    <h1 class="home__hero_title">Hi, I'm Kevin.</h1>
+    <img class="home__hero_img" src="kevin.svg" alt="{{ page_path.hero.image }}">
+    <h1 class="home__hero_title">
+      {{ page_path.hero.title }}
+    </h1>
     <div class="home__hero_body_wrapper">
       <p class="home__hero_body">
-        I've been producing software for the iPhone, Android, and Web since 2010.
+        {{ page_path.hero.body.tenure }}
       </p>
       <p class="home__hero_body">
-        During that time I've held roles in Sales & Marketing, Product Management, and, most recently, in Engineering as a Web Developer at 500px.
+        {{ page_path.hero.body.roles }}
       </p>
       <p class="home__hero_body">
-        When I'm not working you'll find me hacking on personal projects, reading philosophy, or whacking around a tennis ball.
+        {{ page_path.hero.body.interests }}
       </p>
     </div>
   </section>
   <footer class="home__footer">
     <div class="home__footer_section">
-      <p class="home__footer_text"><strong>Toronto, Canada.</strong></p>
+      <p class="home__footer_text"><strong>{{ page_path.footer.location }}</strong></p>
     </div>
     <div class="home__footer_section">
       <p class="home__footer_text">
-        <strong>Contact:</strong>
-        <a href="mailto:kevin@trustyknave.com" class="home__footer_link">
+        <strong>{{ page_path.footer.contact.title }}</strong>
+        <a href="mailto:{{ page_path.footer.contact.email }}" class="home__footer_link">
           <i class="fa fa-reply" aria-hidden="true"></i>
         </a>
-        <a href="https://twitter.com/trustyknave" class="home__footer_link">
+        <a href="{{ page_path.footer.contact.twitter }}" class="home__footer_link">
           <i class="fa fa-twitter" aria-hidden="true"></i>
         </a>
-        <a href="https://github.com/trustyknave" class="home__footer_link">
+        <a href="{{ page_path.footer.contact.github }}" class="home__footer_link">
           <i class="fa fa-github" aria-hidden="true"></i>
         </a>
       </p>
       <p class="home__footer_text">
-        <strong>Work:</strong>
-          <a class="home__footer_link" href="https://500px.com/kmcloughlin">
+        <strong>{{ page_path.footer.work.title }}</strong>
+          <a class="home__footer_link" href="{{ page_path.footer.work.500px }}">
             <i class="fa fa-500px" aria-hidden="true"></i>
           </a>
       </p>
