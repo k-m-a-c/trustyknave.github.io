@@ -5,7 +5,7 @@
 @import "bulma/bulma";
 
 html {
-  background-color: #ffcc00;
+  background-color: cadetblue;
 }
 
 html, body {
@@ -27,6 +27,7 @@ body {
   flex-direction: column;
 
   &_img {
+    border-radius: 50%;
     height: 300px;
   }
 
@@ -66,7 +67,7 @@ body {
   }
 
   &_body {
-    color: black;
+    color: white;
     font-size: 30px;
     margin: 20px 0;
   }
@@ -89,7 +90,7 @@ body {
   }
 
   &_text {
-    color: black;
+    color: white;
     font-size: 30px;
 
     & > a {
@@ -130,7 +131,7 @@ body {
     text-decoration: none;
 
     &:hover {
-      color: #5ba3a3;
+      color: #ffcc00;
     }
   }
 }
