@@ -28,7 +28,8 @@ body {
 
   &_img {
     border-radius: 50%;
-    height: 300px;
+    height: 250px;
+    margin: 30px 0;
   }
 
   @include desktop {
@@ -41,6 +42,7 @@ body {
     color: white;
     font-size: 100px;
     font-weight: bold;
+    line-height: 1;
     margin-bottom: 50px;
     margin-top: 0;
   }
@@ -48,9 +50,6 @@ body {
   &_title {
     font-size: 50px;
     margin-bottom: 10px;
-  }
-
-  @include desktop {
   }
 
   &_body_wrapper {
@@ -92,6 +91,7 @@ body {
   &_text {
     color: white;
     font-size: 30px;
+    font-weight: 600;
 
     & > a {
       margin: 0 8px;
@@ -116,7 +116,9 @@ body {
     }
 
     &_text {
+      color: white;
       font-size: 18px;
+      font-weight: 600;
       margin: 10px;
 
       &:nth-child(1) {

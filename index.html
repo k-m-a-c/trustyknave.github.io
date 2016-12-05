@@ -27,11 +27,11 @@ title: <Home>
   </section>
   <footer class="home__footer">
     <div class="home__footer_section">
-      <p class="home__footer_text"><strong>{{ page_path.footer.location }}</strong></p>
+      <p class="home__footer_text">{{ page_path.footer.location }}</p>
     </div>
     <div class="home__footer_section">
       <p class="home__footer_text">
-        <strong>{{ page_path.footer.contact.title }}</strong>
+        {{ page_path.footer.contact.title }}
         <a href="mailto:{{ page_path.footer.contact.email }}" class="home__footer_link">
           <i class="fa fa-reply" aria-hidden="true"></i>
         </a>
@@ -43,10 +43,10 @@ title: <Home>
         </a>
       </p>
       <p class="home__footer_text">
-        <strong>{{ page_path.footer.work.title }}</strong>
-          <a class="home__footer_link" href="{{ page_path.footer.work.500px }}">
-            <i class="fa fa-500px" aria-hidden="true"></i>
-          </a>
+        {{ page_path.footer.work.title }}
+        <a class="home__footer_link" href="{{ page_path.footer.work.500px }}">
+          <i class="fa fa-500px" aria-hidden="true"></i>
+        </a>
       </p>
     </div>
   </footer>
